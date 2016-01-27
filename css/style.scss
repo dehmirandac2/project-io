@@ -122,6 +122,21 @@ header{background-color: #000; overflow: hidden; width: $col-lg-100;
 	transform: translate(-50%, -50%);left: 50%!important;
 	img{width:100%; height:auto; position: relative!important; margin-top:-38px}
 }
+
+.hold-logos{
+	margin-top:60px;
+	.logo{
+		width: 33%;
+		float: left;
+		text-align: center;
+		&:first-child{
+			text-align: left;
+		};
+		&:last-child{
+			text-align: right;
+		}
+	}
+}
 /*---- banner and title ----*/
 #hold-title-page{width: $col-lg-100; overflow: hidden; height: 120px; position: relative;
 	img{width: 100%; position: absolute; bottom:0;}
@@ -260,8 +275,8 @@ header{background-color: #000; overflow: hidden; width: $col-lg-100;
 
 .hold-researcher{
 	width: $col-lg-21; text-align: center; font-weight: bold; float: left; margin-right: 5%;
-	.photo{@include round-border(70%, #000, 3px); overflow: hidden; text-align: center; position: relative; margin: 0 auto; margin-bottom: 10px;
-		img{width: 580px; position: absolute; left: -196px; top: -63px;}
+	.photo{
+		img{}
 	}
 	p{font-size: 1.2em;}
 	a{text-decoration: underline; color: $green; text-transform: uppercase; font-size: 1.0em;}
@@ -371,6 +386,13 @@ header{background-color: #000; overflow: hidden; width: $col-lg-100;
 		a{font-size: 0.7em!important;}
 		.photo{
 			img{width: 350%!important; left: -149px; top: -42px}
+		}
+	}
+	.hold-logos{
+		.logo{
+			width: 100%;
+			text-align: center!important;
+			margin-bottom: 40px;
 		}
 	}
 }

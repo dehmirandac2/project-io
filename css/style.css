@@ -198,6 +198,17 @@ header {
     position: relative !important;
     margin-top: -38px; }
 
+.hold-logos {
+  margin-top: 60px; }
+  .hold-logos .logo {
+    width: 33%;
+    float: left;
+    text-align: center; }
+    .hold-logos .logo:first-child {
+      text-align: left; }
+    .hold-logos .logo:last-child {
+      text-align: right; }
+
 /*---- banner and title ----*/
 #hold-title-page {
   width: 100%;
@@ -506,24 +517,6 @@ header {
   font-weight: bold;
   float: left;
   margin-right: 5%; }
-  .hold-researcher .photo {
-    width: 70%;
-    height: auto;
-    padding-top: 70%;
-    border-radius: 70%;
-    border-color: #000;
-    border-width: 3px;
-    border-style: solid;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-    .hold-researcher .photo img {
-      width: 580px;
-      position: absolute;
-      left: -196px;
-      top: -63px; }
   .hold-researcher p {
     font-size: 1.2em; }
   .hold-researcher a {
@@ -754,7 +747,12 @@ header {
   .hold-researcher .photo img {
     width: 350% !important;
     left: -149px;
-    top: -42px; } }
+    top: -42px; }
+
+  .hold-logos .logo {
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 40px; } }
 @media only screen and (min-width: 800px) and (max-width: 994px) {
   .banner-size3 {
     height: 75% !important; }
